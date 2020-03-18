@@ -1,12 +1,10 @@
-# Spotify Accounts Authentication Examples
+# The Vishual Project
 
-This project contains basic demos showing the different OAuth 2.0 flows for [authenticating against the Spotify Web API](https://developer.spotify.com/web-api/authorization-guide/).
+This is the back end to the Vishual Project, a music visualiser that runs in the browser using the Spotify API.
 
-These examples cover:
+## Spotify Accounts Authentication
 
-* Authorization Code flow
-* Client Credentials flow
-* Implicit Grant flow
+This project contains the code for [authenticating against the Spotify Web API](https://developer.spotify.com/web-api/authorization-guide/).
 
 ## Installation
 
@@ -16,20 +14,13 @@ Once installed, clone the repository and install its dependencies running:
 
     $ npm install
 
-### Using your own credentials
-You will need to register your app and get your own credentials from the Spotify for Developers Dashboard.
-
-To do so, go to [your Spotify for Developers Dashboard](https://beta.developer.spotify.com/dashboard) and create your application. For the examples, we registered these Redirect URIs:
-
-* http://localhost:8888 (needed for the implicit grant flow)
-* http://localhost:8888/callback
-
-Once you have created your app, replace the `client_id`, `redirect_uri` and `client_secret` in the examples with the ones you get from My Applications.
-
 ## Running the examples
-In order to run the different examples, open the folder with the name of the flow you want to try out, and run its `app.js` file. For instance, to run the Authorization Code example do:
 
+In order to run the Authorization Code flow do:
+
+```
     $ cd authorization_code
     $ node app.js
+```
 
 Then, open `http://localhost:8888` in a browser.
